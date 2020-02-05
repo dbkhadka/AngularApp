@@ -18,7 +18,7 @@ import { ProductListComponent } from './product-list/product-list.component';
               ReactiveFormsModule,
               FormsModule,
               RouterModule.forRoot([
-                
+                {path:'',component:ProductListComponent}
               ]) 
             ],
   declarations: [ AppComponent, HelloComponent, TopBarComponent, ProductListComponent ],
