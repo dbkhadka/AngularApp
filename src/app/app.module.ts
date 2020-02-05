@@ -3,23 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import {RouterModule} from '@angular/router';
-
+import {ReactiveFormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 
 
 @NgModule({
   imports: [ 
               BrowserModule,
+              ReactiveFormsModule,
               FormsModule,
               RouterModule.forRoot([
                 
               ]) 
             ],
-  declarations: [ AppComponent, HelloComponent, TopBarComponent ],
+  declarations: [ AppComponent, HelloComponent, TopBarComponent, ProductListComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

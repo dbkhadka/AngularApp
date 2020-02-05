@@ -1,0 +1,9 @@
+<div> Product List:
+  <div *ngFor="let product of products">
+    <div style="border:2px solid black; margin:5px;padding:5px;">
+        <h3>{{product.name}}(${{product.price}})</h3>
+        {{product.description}}
+    </div>
+    
+  </div>
+</div>
