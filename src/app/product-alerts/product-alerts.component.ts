@@ -10,4 +10,8 @@ import {EventEmitter} from '@angular/core';
 export class ProductAlertsComponent{
   @Input() product;
   @Output()notify = new EventEmitter();
+
+  isProductPriceGreaterThan700(){
+    return this.product.price > 700;
+  }
 }

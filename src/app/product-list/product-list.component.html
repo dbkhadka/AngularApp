@@ -1,7 +1,9 @@
 <h2> Product List:</h2>
-<div *ngFor="let product of products">
+<div *ngFor="let product of products; index as productId">
   <div style="border:2px solid black;margin-bottom:10px; padding:5px;">
-      <h3>{{product.name}}(${{product.price}})</h3>
+      <a [routerLink]="['/products',productId]">
+        {{product.name}}(${{product.price}})
+      </a>
       {{product.description}}
      <div>
        <button (click)="share()">Share</button>
